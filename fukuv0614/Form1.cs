@@ -22,7 +22,7 @@ namespace fukuv0614
             count++;
             MessageBox.Show($"{count}âÒñ⁄ÇÃíßêÌ");
             
-            textBox1.Text = $"{yosou}";
+            yosou=int.Parse(textBox1.Text);
 
             if (ans == yosou)
                 MessageBox.Show("Bingo!!");
@@ -31,13 +31,9 @@ namespace fukuv0614
 
             if (ans < yosou)
                 MessageBox.Show("Less");
-                ans = random.Next(51);
-                count = 0;
 
             if (ans > yosou)
                 MessageBox.Show("Greater");
-                ans = random.Next(51);
-                count = 0;
         }
 
       
